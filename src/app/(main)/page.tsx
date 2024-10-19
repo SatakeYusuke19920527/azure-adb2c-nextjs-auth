@@ -23,6 +23,13 @@ export default function Home() {
       >
         {user === null ? 'login' : 'logout'}
       </h1>
+      <h1>
+        {
+          user === null
+            ? 'Please login to see your profile'
+            : `Welcome ${user?.givenName} ${user?.familyName}! 🚀 Warm Welcome 🚀`
+        }
+      </h1>
     </main>
   );
 }
